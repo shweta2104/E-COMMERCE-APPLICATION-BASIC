@@ -1,0 +1,148 @@
+﻿/* General Section Styling */
+.about-section {
+    padding: 40px 20px;
+    background: #fff9f0; /* Light subtle background for whole about section */
+    border-radius: 12px;
+}
+
+    .about-section h1,
+    .about-section h2,
+    .about-section h3 {
+        font-family: 'Playfair Display', serif;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #2f4f4f;
+    }
+
+    .about-section p,
+    .about-section ul {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        color: #444;
+        line-height: 1.6;
+    }
+
+    /* List Styling */
+    .about-section ul {
+        padding-left: 1.5rem;
+    }
+
+    /* Card / Box Styling */
+    .about-section .border {
+        background-color: #f8f9fa;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 12px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+        padding: 30px;
+    }
+
+        .about-section .border:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+/* Testimonials */
+.testimonials-section .border {
+    background-color: #ffffff;
+    border-left: 4px solid #28a745;
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.2);
+    padding: 25px 20px;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Headings */
+h3.text-center {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #2e4a36;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Section Backgrounds */
+.mission-vision-section {
+    background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.our-story-section {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.testimonials-section {
+    background: linear-gradient(135deg, #dcedc8 0%, #aed581 100%);
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    margin-bottom: 40px;
+}
+
+/* Typography inside sections */
+.mission-vision-section h5,
+.our-story-section h5 {
+    font-weight: 600;
+    color: #007b5e;
+    margin-bottom: 15px;
+}
+
+.mission-vision-section p,
+.our-story-section p,
+.testimonials-section p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Testimonials Strong tag */
+.testimonials-section strong {
+    display: block;
+    margin-top: 10px;
+    color: #2e4a36;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mission-vision-section .col-md-6,
+    .testimonials-section .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .mission-vision-section h5,
+    .our-story-section h5 {
+        text-align: center;
+    }
+
+    .mission-vision-section p,
+    .our-story-section p,
+    .testimonials-section p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 15px;
+    }
+
+    h3.text-center {
+        font-size: 1.4rem;
+    }
+
+    .border {
+        padding: 1rem !important;
+    }
+}

@@ -1,0 +1,271 @@
+﻿/* Navbar Styling */
+.navbar {
+    background-color: #64E2B7; /* Green shade */
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo alignment */
+.navbar-logo-container .eco-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo-container .eco-e {
+    display: flex;
+    align-items: center;
+}
+
+    .navbar-logo-container .eco-e .leaf-icon {
+        margin-right: 0.5rem;
+    }
+
+.navbar-logo-container .eco-text {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+/* Center the navigation links */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Pipe separator styling */
+.nav-item span {
+    padding: 0 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Navigation items spacing */
+.navbar-nav .nav-item {
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+    /* Navigation link styling */
+    .navbar-nav .nav-item .nav-link {
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: color 0.3s ease-in-out;
+    }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            color: #333;
+            text-decoration: underline;
+        }
+
+/* Right-align icons */
+.ml-auto {
+    margin-left: auto;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Icon spacing */
+.ml-auto .nav-item {
+    margin-right: 5px;
+}
+
+    .ml-auto .nav-item i {
+        font-size: 1.25rem;
+    }
+
+.icon-group .nav-item {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.icon-group .nav-link {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* Dropdown toggle styling */
+.navbar-nav .dropdown-toggle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    transition: color 0.3s ease-in-out;
+}
+
+    .navbar-nav .dropdown-toggle:hover {
+        color: #333;
+        text-decoration: underline;
+    }
+
+/* Bootstrap Dropdown Menu Styling */
+.dropdown-menu {
+    display: none;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    padding: 0.5rem 0;
+    animation: dropdownFade 0.3s ease;
+}
+
+/* Show dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Dropdown items */
+.dropdown-item {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #333;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    .dropdown-item:hover {
+        background-color: #64E2B7;
+        color: #fff;
+        text-decoration: none;
+    }
+
+/* Dropdown fade animation */
+@keyframes dropdownFade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Profile menu spacing and alignment */
+.profile-menu {
+    margin-left: 20px;
+}
+
+    /* Username + icon appearance */
+    .profile-menu .nav-link {
+        font-weight: 600;
+        color: #1d3557 !important;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+        /* On hover or focus */
+        .profile-menu .nav-link:hover,
+        .profile-menu .nav-link:focus {
+            color: #0d6efd !important;
+        }
+
+    /* Dropdown menu box styling */
+    .profile-menu .dropdown-menu {
+        padding: 12px;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        background-color: #ffffff;
+        min-width: 200px;
+    }
+
+    /* Dropdown item text (email) */
+    .profile-menu .dropdown-item-text {
+        font-size: 0.9rem;
+        color: #495057;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    /* Logout item */
+    .profile-menu .dropdown-item {
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: #dc3545;
+        transition: background 0.2s ease;
+    }
+
+        .profile-menu .dropdown-item:hover {
+            background-color: #f8d7da;
+            color: #b02a37;
+        }
+
+    /* Divider spacing */
+    .profile-menu .dropdown-divider {
+        margin: 8px 0;
+    }
+
+
+/* Login/Register Links Styling */
+.navbar-nav .nav-item a {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+    .navbar-nav .nav-item a:hover {
+        color: #007bff;
+    }
+
+/* Pipe Separator Style */
+.navbar-nav .nav-item span.nav-link {
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+/* Ensure the login/register links are aligned properly */
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+    /* === Custom Dropdown for "Product" Section === */
+
+    .navbar-nav .nav-item.dropdown.product-menu {
+        position: relative;
+    }
+
+        .navbar-nav .nav-item.dropdown.product-menu ul.product-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            min-width: 200px;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 0.5rem 0;
+            animation: dropdownFade 0.3s ease;
+            list-style:none;
+        }
+
+        .navbar-nav .nav-item.dropdown.product-menu:hover ul.product-menu {
+            display: block;
+        }
+
+        .navbar-nav .nav-item.dropdown.product-menu ul.product-menu .product-item {
+            display: block;
+            padding: 0.5rem 1rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+            .navbar-nav .nav-item.dropdown.product-menu ul.product-menu .product-item:hover {
+                background-color: #64E2B7;
+                color: #fff;
+                text-decoration: none;
+            }

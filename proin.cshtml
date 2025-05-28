@@ -1,0 +1,50 @@
+﻿@model tblproduct;
+<html>
+    <head>
+        <title>Products</title>
+    </head>
+    <body>
+        <h2>Product Form</h2>
+        <form method="post" enctype="multipart/form-data">
+        
+            <label>Category:</label>
+            <select asp-for="cid" asp-items="ViewBag.clist">
+            <option value="">--- Select category ---</option>
+            </select>
+            <br /><br />
+
+            <label>Product Name:</label>
+            <input type="text" name="pname" id="pname" />
+            <br /><br />
+
+            <label>Description:</label>
+            <input type="text" name="pdes" id="pdes" />
+            <br /><br />
+
+            <label>Price:</label>
+            <input type="text" name="price" id="price" />
+            <br /><br />
+
+            <label>Material:</label>
+            <select name="material" id="material">
+                <option value="">--- Select Material ---</option>
+                <option value="Wooden">Wooden</option>
+                <option value="Terracotta">Terracotta</option>
+                <option value="Bamboo">Bamboo</option>
+                <option value="Glass Meal Prep Containers">Glass Meal Prep Containers</option>
+                <option value="Fabric">Fabric</option>
+                <option value="Ceramic">Ceramic</option>
+                <option value="Jute or Straw">Jute or Straw</option>
+            </select>
+            <br /><br />
+
+            <label>Select Image:</label>
+            <input type="file" name="file" />
+            <br /><br />
+
+            <input type="submit" name="Insert" value="Insert" />
+
+        
+        </form>
+    </body> 
+</html>

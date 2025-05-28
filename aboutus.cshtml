@@ -1,0 +1,121 @@
+﻿@{
+    ViewData["Title"] = "About Us";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - econest</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/navbar.css" />
+    <link rel="stylesheet" href="~/css/about.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    
+    <!-- Main Content -->
+    <div class="container about-section my-5">
+        <h1 class="text-center mb-4">About Us</h1>
+        <p class="lead text-center">
+            Welcome to <strong>ecoNest</strong>, your one-stop destination for sustainable living.
+        </p>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <img src="~/uploads/about.jpg" alt="About ecoNest" class="img-fluid rounded shadow-sm">
+            </div>
+            <div class="col-md-6">
+                <h3>Our Commitment</h3>
+                <p>
+                    At ecoNest, our mission is to promote eco-friendly living through accessible and affordable products. From personal care items to plants and sustainable household essentials, we strive to reduce environmental impact and inspire others to live green.
+                </p>
+                <p>
+                    We believe in zero-waste packaging, ethical sourcing, and products that stand the test of time.
+                </p>
+                <h4>Why Choose Us?</h4>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-check-circle text-success me-2"></i> Eco-conscious product range</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i> Trusted supplier network</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i> Customer-first approach</li>
+                    <li><i class="fas fa-check-circle text-success me-2"></i> Fast and secure shopping</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <!-- Our Mission & Vision Section -->
+            <div class="mission-vision-section mb-5">
+                <h3 class="text-center mb-4">Our Mission & Vision</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="p-4 border rounded shadow-sm h-100">
+                            <h5>Our Mission</h5>
+                            <p>
+                                At econest, our mission is to empower sustainable living by providing eco-friendly products that reduce waste and protect our environment. We aim to inspire conscious choices in everyday life.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-4 border rounded shadow-sm h-100">
+                            <h5>Our Vision</h5>
+                            <p>
+                                We envision a future where sustainability is the standard, not the exception. Our goal is to become a leading platform for green alternatives, fostering a healthier planet for generations to come.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Story Section -->
+            <div class="our-story-section mb-5">
+                <h3 class="text-center mb-4">Our Story</h3>
+                <div class="p-4 border rounded shadow-sm">
+                    <p>
+                        econest began with a simple idea: making sustainable living easy and accessible for everyone. Founded in 2025 by a group of eco-conscious friends, we turned our passion for nature into a purpose—offering eco-friendly products that blend function with responsibility.
+                    </p>
+                    <p>
+                        What started as a small initiative is now a growing community of green warriors, customers, and partners who believe in making a positive impact. Every product we offer is thoughtfully selected to reduce environmental harm and promote a cleaner, greener lifestyle.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Customer Testimonials Section -->
+            <div class="testimonials-section mb-5">
+                <h3 class="text-center mb-4">What Our Customers Say</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="p-3 border rounded shadow-sm h-100">
+                            <p>"Absolutely love the eco-friendly packaging and quality products. econest is now my go-to store!"</p>
+                            <strong>- Anjali R.</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3 border rounded shadow-sm h-100">
+                            <p>"Great customer service and a wonderful selection of sustainable goods."</p>
+                            <strong>- Rohit K.</strong>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3 border rounded shadow-sm h-100">
+                            <p>"Shopping here makes me feel like I’m contributing to something bigger."</p>
+                            <strong>- Neha S.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Footer -->
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @* @await RenderSectionAsync("Scripts", required: false) *@
+</body>
+</html>

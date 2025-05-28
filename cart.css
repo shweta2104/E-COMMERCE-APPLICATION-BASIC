@@ -1,0 +1,51 @@
+﻿.btn-gradient {
+    background: linear-gradient(135deg, #26a69a, #00796b);
+    color: #fff;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+    .btn-gradient:hover {
+        background: linear-gradient(135deg, #00796b, #004d40);
+        transform: translateY(-2px);
+    }
+
+.btn-gradient-danger {
+    background: linear-gradient(135deg, #e53935, #b71c1c);
+    color: #fff;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+    .btn-gradient-danger:hover {
+        background: linear-gradient(135deg, #b71c1c, #7f0000);
+        transform: translateY(-2px);
+    }
+
+
+.btn-gradient-primary {
+    background: linear-gradient(135deg, #26a69a, #00796b);
+    color: #fff;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+    .btn-gradient-primary:hover {
+        background: linear-gradient(135deg, #00796b, #004d40);
+        transform: translateY(-2px);
+    }

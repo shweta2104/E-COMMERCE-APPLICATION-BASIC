@@ -1,0 +1,63 @@
+﻿@model List<prolist>
+
+@if (TempData["msg"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["msg"]
+    </div>
+}
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/css/cart.css" rel="stylesheet" />
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Your Cart</h2>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info text-center">Your cart is empty.</div>
+    }
+    else
+    {
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            @foreach (var item in Model)
+            {
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="~/uploads/@item.image" class="card-img-top" alt="@item.pname" />
+                        <div class="card-body">
+                            <h5 class="card-title">@item.pname</h5>
+                            <p class="card-text">@item.pdes</p>
+                            <p class="card-text"><strong>Material:</strong> @item.material</p>
+                            <p class="card-text text-success"><strong>Price:</strong> ₹@item.price</p>
+                            <p class="card-text"><strong>Quantity:</strong> @item.qty</p>
+                            <p class="card-text"><strong>Subtotal:</strong> ₹@(item.price * item.qty)</p>
+
+                            <form asp-controller="cart" asp-action="Remove" method="post" onsubmit="return confirm('Are you sure want to delete this item?');">
+                                <input type="hidden" name="productId" value="@item.pid" />
+                                <button type="submit" class="btn btn-gradient-danger w-100">Remove</button>
+
+                            </form>
+
+                            <form asp-controller="cart" asp-action="UpdateQuantity" method="post" onsubmit="return confirm('Update quantity?');">
+                                <input type="hidden" name="productId" value="@item.pid" />
+                                <input type="number" name="quantity" value="@item.qty" min="1" class="form-control mb-2" />
+                                <button type="submit" class="btn btn-gradient-primary w-100">Update Quantity</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <div class="text-end mt-4">
+            <h4>Total: ₹@ViewBag.Total</h4>
+            <a asp-controller="order" asp-action="orderin" class="btn btn-gradient mt-2">Proceed to Checkout</a>
+        </div>
+
+    }
+</div>
+
+

@@ -1,0 +1,33 @@
+﻿@model tbluser;
+
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f2f2f2">
+    <div style="background-color: #fff; padding: 30px; border-radius: 10px; max-width: 500px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+        <h2 style="text-align: center; margin-bottom: 30px;">User Registration Form</h2>
+        <form method="post" action="register">
+
+            <label style="display: block; margin-bottom: 5px;">User Name:</label>
+            <input type="text" name="uname" id="uname" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px;" />
+
+            <label style="display: block; margin-bottom: 5px;">Email:</label>
+            <input type="email" name="email" id="email" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px;" />
+
+            <label style="display: block; margin-bottom: 5px;">Password:</label>
+            <input type="password" name="password" id="password" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px;" />
+
+            <label style="display: block; margin-bottom: 5px;">Role:</label>
+            <select name="role" id="role" style="width: 100%; padding: 10px; margin-bottom: 30px; border: 1px solid #ccc; border-radius: 5px;">
+                <option value="">--- Select Role ---</option>
+                @* <option value="Admin">Admin</option> *@
+                <option value="Customer">Customer</option>
+                <option value="Supplier">Supplier</option>
+            </select>
+
+            <input type="submit" name="Register" value="Register" style="width: 100%; padding: 12px; background-color: #28a745; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;" />
+        </form>
+    </div>
+</body>
+</html>

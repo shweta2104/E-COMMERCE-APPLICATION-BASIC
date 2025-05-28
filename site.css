@@ -1,0 +1,99 @@
+/* Global Settings */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+/* Logo Styles */
+.navbar-logo-container {
+    display: flex;
+    align-items: center;
+    padding-left:15px;
+    
+    
+}
+
+.eco-logo {
+    display: flex;
+    align-items: flex-end;
+    gap: 2px; /* Reduced gap between E and CO */
+}
+
+.eco-e {
+    position: relative;
+    display: inline-block;
+}
+
+.leaf-icon {
+    position: absolute;
+    top: -12px;
+    left: -20px;
+    font-size: 20px;
+    transform: rotate(-70deg);
+    text-shadow: 1px 1px 2px black;
+    margin-left:4px;
+}
+
+/* Adjust the gap between E and CO */
+.eco-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #2c2c2c;
+    margin-left: -2px; /* Adjust for desired spacing */
+}
+
+.nest-text {
+    font-family: 'Roboto', serif;
+    font-size: 30px;
+    color: white;
+    margin-left: 2px;
+}
+
+/*.nest-icon {
+    font-size: 30px;
+    margin-left: 2px;
+}*/
+
+/* Navbar Customizations */
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 1rem;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+    .nav-link:hover {
+        color: #258cfb;
+    }
+
+/* Footer Customizations */
+.footer {
+    padding: 1rem 0;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+    .footer a {
+        color: #258cfb;
+    }
+
+        .footer a:hover {
+            color: #007bff;
+        }

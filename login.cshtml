@@ -1,0 +1,104 @@
+﻿@model tbluser;
+
+@if (TempData["status"] != null)
+{
+    if (TempData["status"].ToString() == "false")
+    {
+        <div style="color:red; text-align:center; margin-bottom: 20px;">Wrong username or password.</div>
+    }
+}
+
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        /* Centering the form container */
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto; /* Centers the form horizontally */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        /* Styling form elements */
+        label {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            display: block;
+            color: #333;
+            text-align: left;
+            width: 100%;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            ;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            input[type="submit"]:hover {
+                background-color: 64E2B7;
+            }
+
+        /* Error message styling */
+        .error-message {
+            color: red;
+            text-align: center;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Login</h2>
+        <form method="post" action="login">
+            <label for="uname1">Username:</label>
+            <input type="text" name="uname1" id="uname1" />
+            <br />
+
+            <label for="email1">Email:</label>
+            <input type="email" name="email1" id="email1" />
+            <br />
+
+            <label for="pass">Password:</label>
+            <input type="password" name="pass" id="pass" />
+            <br />
+
+            <input type="submit" name="Login" value="Login" />
+        </form>
+    </div>
+</body>
+</html>
